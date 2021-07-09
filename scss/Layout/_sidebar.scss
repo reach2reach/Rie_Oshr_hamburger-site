@@ -1,0 +1,9 @@
+.l-sidebar{
+    @include mq(pc){
+        width: 20%;
+        height: calc(100% - 80px); //footerのheightの除いた高さ設定
+        position: absolute;
+        top: 0;
+        right: 0;   
+    }            
+}

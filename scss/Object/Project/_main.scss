@@ -1,0 +1,209 @@
+.p-main-visual{
+    width: 100%;
+    height: 46vh;
+    background-image: url(../images/mainvisual-iphone.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+
+    @include mq(tab){
+        width: 100%;
+        height: 35vh;
+        background-image: url(../images/mainvisual-tab.jpg);
+    }
+
+    @include mq(pc){
+        width: 80%;
+        height: 45vh;
+        background-image: url(../images/mainvisual-pc.jpg);
+    }
+   
+    h2{
+        color:$first-white;
+        font-size: 2.3rem;
+        padding-left: 20px;
+        font-family:"mplus-1m"; 
+        
+        @include mq(tab){
+            font-size: 1.6rem;
+            padding-left: 60px;
+        }
+
+        @include mq(pc){
+            font-size: 1.4rem;
+        }    
+    }
+}//p-main-visual
+
+.p-main__article--TakeOut{
+    position: relative;
+    width:auto;
+    height: 114vh;
+    margin: 20px;
+    background-image: url(../images/take-out.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @include mq(tab){
+        width: 100%;
+        height: 85vh;
+        margin: 30px;
+    }
+
+    @include mq(pc){
+        height: 103vh;
+        margin: 59px 43px 70px 55px;
+    }
+    
+    h3{
+        position: relative;
+        padding: 20px 15px;
+        @include mq(tab){
+            padding: 11px 8px;   
+        }
+
+        >a{
+            color:$second-white;
+            font-family:'Roboto';
+            font-size: 2.4rem;
+            
+            @include mq(tab){
+                font-size: 1.9rem;   
+            }
+            @include mq(pc){
+                font-size: 2.6rem;
+            }
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background-color:$first-white;
+            width: 2.2rem;
+            height: 0.2rem;
+            top: 90px;
+            left: 16px;
+
+            @include mq(tab){
+                width: 1.6rem;
+                top: 65px; 
+                left:9px;
+            }
+
+            @include mq(pc){
+                width: 2.0rem;
+                height: 2px;
+                top: 83px;
+            }
+        }  
+    }
+}//p-main__article--TakeOut
+
+.p-main__article--EatIn{
+    position: relative;
+    align-items: flex-end;
+    width:auto;
+    height: 114vh;
+    margin: 0px 20px 45px 20px;
+    background-image: url(../images/eat-in.jpg);
+    background-size: cover;
+    background-position: center;
+
+    @include mq(tab){
+        width: 100%;
+        height: 85vh;
+        margin: 30px 30px 30px 0;
+    }
+
+    @include mq(pc){
+        height: 103vh;
+        margin: 59px 43px 70px 0px;
+    }
+
+    h3{
+        position: relative;
+        padding: 20px 15px;
+        @include mq(tab){
+            padding: 11px 8px;   
+        }
+        >a{
+            color:$first-white;
+            font-family:'Roboto';
+            font-size: 2.4rem;
+
+            @include mq(tab){
+                font-size: 1.9rem;   
+            }
+            @include mq(pc){
+                font-size: 2.6rem;
+            }
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            background-color:$first-white;
+            width: 2.2rem;
+            height: 0.2rem;
+            top: 90px;
+            left: 16px;
+
+            @include mq(tab){
+                width: 1.6rem;
+                top: 65px; 
+                left:9px;
+            }
+
+            @include mq(pc){
+                width: 2.0rem;
+                height: 2px;
+                top: 83px;
+            }
+        }  
+    }
+}//p-main__article--EatIn
+
+.p-TakeOut__list{
+    height: 28vh;
+    width: auto;
+    background-color: $first-white;
+    opacity: 0.8;
+    margin: 10px;
+
+    @include mq(tab){
+        height: 22vh;
+    }
+    @include mq(pc){
+        height: 15vh;
+    }
+
+    >h4{
+        font-size: 1.3rem;
+        font-weight:700;
+        color:$brown;
+        padding: 20px 0 0 11px;
+
+        @include mq(tab){
+            font-size: 1rem;
+            padding: 14px 0 0 10px;
+        }
+
+        @include mq(pc){
+            font-size: 0.9rem;
+        }
+    }
+
+    >p{
+        font-size: 1.0rem;
+        color: $brown;
+        padding: 20px 11px;
+
+        @include mq(tab){
+            font-size: 0.75rem;
+            padding: 14px 0 0 10px;
+        }
+        @include mq(pc){
+            font-size: 0.5rem;
+        }
+    }
+}
+
