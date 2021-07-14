@@ -22,6 +22,33 @@
     bottom: 0;   
 }
 
+//archive//
+.l-main-wrapper--archive{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    margin:0 20px;
+
+    @include mq(pc){
+        width: 80%;
+        margin-left:55px;
+    }
+}
+.l-menu-wrapper{
+    width: auto;
+}
+.l-menu{
+    margin-bottom: 20px;
+}
+.l-pagination{
+    width: 100%;
+    @include mq(pc){
+        width: 80%;
+    }
+}
+
+
 
 
 
