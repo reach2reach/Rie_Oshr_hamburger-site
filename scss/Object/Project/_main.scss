@@ -151,7 +151,7 @@
         }
 
         @include mq(pc){
-            font-size: 0.9rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -161,11 +161,8 @@
         padding: 20px 11px;
 
         @include mq(tab){
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             padding: 14px 0 0 10px;
-        }
-        @include mq(pc){
-            font-size: 0.5rem;
         }
     }
 }
@@ -185,7 +182,7 @@
         }
 
         @include mq(pc){
-            font-size: 1.2rem; 
+            font-size: 1.4rem; 
         }
     }
    >p{
@@ -198,8 +195,7 @@
         }
 
         @include mq(pc){
-            font-size: 0.5rem;
-            padding-right: 120px; 
+            padding-right: 160px; 
         }
     }
 }
@@ -248,7 +244,7 @@
                 padding: 20px 0 20px 10px;
             }
             @include mq(pc){
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 padding: 25px 0 23px 15px; 
             }
         }
@@ -259,7 +255,7 @@
             } 
 
             @include mq(pc){
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 padding-left:15px; 
             }
         }
@@ -272,7 +268,7 @@
             }
 
             @include mq(pc){
-                font-size: 0.7rem;
+                font-size: 0.8rem;
                 padding-left:15px; 
             }
         }
