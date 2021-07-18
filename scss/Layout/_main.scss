@@ -48,6 +48,25 @@
     }
 }
 
+//single, page//
+.l-main-wrapper--single,.l-main-wrapper--pages{
+    width: 100％;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @include mq(tab){
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    @include mq(pc){
+        width: 80%;
+        margin-left:50px;
+        margin-right:50px;
+    }
+}
+
 
 
 

@@ -127,3 +127,30 @@
         margin:10px auto 20px auto; 
     }
 }
+
+//single-page
+.c-button{
+    width: 100%;
+    height: 14vh;
+    text-align: center;
+    background-color: $bg-dark-beige;
+    border: solid 1px $dark-gray;
+    border-radius: 25px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: $brown;
+    cursor: pointer;
+
+    @include mq(tab){
+        width: 60%;
+        font-size: 0.8rem;
+        border-radius: 20px;
+        height: 13vh;
+    }
+    @include mq(pc){
+        width: 28%;
+        //font-size: 0.7rem;
+        border-radius: 15px;
+        height: 10vh;
+    }  
+}
